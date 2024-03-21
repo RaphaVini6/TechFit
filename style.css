@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
-    --primary-color: #111317;
+    --primary-color: #000000;
     --primary-color-light: #1f2125;
     --primary-color-extra-light: #35373b;
-    --secondary-color: #f9ac54;
-    --secondary-color-dark: #d79447;
+    --secondary-color: #48bb6e;
+    --secondary-color-dark: #6f13f8;
     --text-light: #d1d5db;
     --white: #ffffff;
     --max-width: 1200px;
@@ -56,7 +56,7 @@
 }
 
 img {
-    width: 100%;
+    width: 90%;
     display: flex;
 }
 
@@ -127,7 +127,7 @@ nav {
 }
 
 .header__container::before {
-    content: "FITNESS";
+    content: "TECH FIT";
     position: absolute;
     bottom: 5rem;
     right: 20rem;
@@ -174,7 +174,7 @@ nav {
 }
 
 .header__image::before {
-    content: "o";
+    content: "TF";
     position: absolute;
     top: 0;
     left: 50%;
@@ -183,12 +183,11 @@ nav {
     font-weight: 400;
     line-height: 20rem;
     color: var(--secondary-color);
-    opacity: 0.1;
     z-index: -1;
 }
 
 .header__image img {
-    max-width: 350px;
+    max-width: 750px;
     margin: auto;
 }
 
