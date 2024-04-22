@@ -178,7 +178,7 @@ nav {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 40rem;
+    font-size: 30rem;
     font-weight: 400;
     line-height: 20rem;
     color: var(--secondary-color);
@@ -186,7 +186,7 @@ nav {
 }
 
 .header__image img {
-    max-width: 750px;
+    max-width: 385px;
     margin: auto;
 }
 
