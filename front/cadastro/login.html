@@ -11,24 +11,27 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="form-wrapper">
-            <form action="" method="post">
-                <h2>Login</h2>
-                <div class="input-group">
-                    <label for="">Usuario</label>
-                    <input type="text" required>
-                </div>
-                <div class="input-group">
-                    <label for="">Senha</label>
-                    <input type="password" required>
-                </div>
-                <div class="lembrar">
-                    <label><input type="checkbox">Lembrar de mim</label>
-                </div>
-                <button type="submit">Entrar</button>
-                <div class="entrar-link">
-                    <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
-
+<div class="wrapper">
+    <div class="form-wrapper">
+        <form action="processa_login.php" method="post">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="usuario">Usuário</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <div class="lembrar">
+                <label><input type="checkbox" name="lembrar">Lembrar de mim</label>
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+        <div class="entrar-link">
+            <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
