@@ -1,4 +1,4 @@
-<!DOCYTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -7,31 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SEJA BEM VINDO!</title>
     <link rel="stylesheet" href="estilo.css">
-
 </head>
 
 <body>
 <div class="wrapper">
     <div class="form-wrapper">
-        <form action="processa_login.php" method="post">
-            <h2>Login</h2>
+        <form id="login-form" action="">
+            <h1>Login</h1>
             <div class="input-group">
-                <label for="usuario">Usuário</label>
-                <input type="text" id="usuario" name="usuario" required>
+                <input type="text" required>
+                <label for="usuario">Usuario</label>
             </div>
             <div class="input-group">
+                <input type="password" required>
                 <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha" required>
             </div>
-            <div class="lembrar">
-                <label><input type="checkbox" name="lembrar">Lembrar de mim</label>
+            <div class="esquecer">
+                <a href="#">Esqueceu a senha?</a>
             </div>
-            <button type="submit">Entrar</button>
+            <button type="submit" class="btn">Entrar</button>
+            <p class="login-link">Ainda não possui uma conta? <a href="cadastro.html">Cadastre-se</a></p>
         </form>
-        <div class="entrar-link">
-            <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
-        </div>
     </div>
 </div>
 </body>
+
 </html>
