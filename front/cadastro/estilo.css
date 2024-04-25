@@ -4,17 +4,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background: linear-gradient(#2193b0, #6dd5ed);
+    background-image: url('../assets/wallpaper.png'); /* Adicionando a imagem de fundo */
+    background-size: cover; /* Para cobrir toda a área */
+    background-repeat: no-repeat; /* Evita repetir a imagem */
+    font-family: 'Roboto', sans-serif; /* Fonte atualizada */
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
+
+
+
 
 .wrapper {
     position: relative;
@@ -24,8 +29,8 @@ body {
 
 .form-wrapper {
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,9 +38,10 @@ body {
     width: 100%;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);}
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
 
-h2 {
+.form-wrapper h2 {
     font-size: 30px;
     color: #ffffff;
     text-align: center;
@@ -45,8 +51,6 @@ h2 {
     position: relative;
     margin-bottom: 30px;
     width: 320px;
-    margin: 30px 0;
-    border-bottom: 2px solid #ffffff;
 }
 
 .input-group label {
@@ -56,7 +60,7 @@ h2 {
     transform: translateY(-50%);
     transition: transform .5s;
     font-size: 16px;
-    color: #333;
+    color: #ffffff;
     padding: 0 5px;
     pointer-events: none;
 }
@@ -74,7 +78,7 @@ h2 {
 }
 
 .input-group input:focus~label,
-.input-group input:valid~label  {
+.input-group input:valid~label {
     transform: translateY(-175%);
     font-size: 12px;
     color: #ffffff;
@@ -84,7 +88,7 @@ h2 {
     margin: -5px 0 15px 5px;
 }
 
-.esquecer  label {
+.esquecer label {
     color: #ffffff;
     font-size: 16px;
 }
@@ -99,10 +103,12 @@ h2 {
 button {
     position: relative;
     width: 100%;
+    top: 0;
+    left: 0;
     height: 40px;
-    background: yellow;
+    background: #f5a637;
     font-size: 16px;
-    color: #0b0b0c;
+    color: #ffffff; /* Updated text color */
     cursor: pointer;
     border-radius: 20px;
     border: none;
@@ -111,7 +117,8 @@ button {
 
 .login-link {
     color: #ffffff;
-    font-size: 16px;
+    font-size: 15px;
+    margin: 25px 0;
     margin-top: 15px;
     text-align: center;
     cursor: pointer;
