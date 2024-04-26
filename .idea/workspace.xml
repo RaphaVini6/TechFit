@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65af5355-0a83-411f-8786-79d0357fb0d6" name="Changes" comment="Update">
-      <change beforePath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/class-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/class-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/join.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/member.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/wallpaper.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cadastro/cadastro.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cadastro/estilo.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cadastro/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +68,7 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/raphael.uchoa/Desktop/aaasdfadfa/TechFit&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/raphael.uchoa/Desktop/aaasdfadfa/TechFit/src/assets&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -95,6 +80,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit\src\assets" />
       <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -121,7 +107,7 @@
       <workItem from="1713896034374" duration="6598000" />
       <workItem from="1713988672236" duration="7370000" />
       <workItem from="1714066547324" duration="4668000" />
-      <workItem from="1714130561521" duration="10165000" />
+      <workItem from="1714130561521" duration="10923000" />
     </task>
     <task id="LOCAL-00001" summary="Atualizado">
       <option name="closed" value="true" />
@@ -219,7 +205,31 @@
       <option name="project" value="LOCAL" />
       <updated>1714141679148</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Update">
+      <option name="closed" value="true" />
+      <created>1714142201767</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1714142201767</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Update">
+      <option name="closed" value="true" />
+      <created>1714142214898</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1714142214898</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Update">
+      <option name="closed" value="true" />
+      <created>1714142553088</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1714142553088</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
