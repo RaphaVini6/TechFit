@@ -19,13 +19,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Selecione o botão "COMECE AGORA" pela classe
-    var startNowButton = document.querySelector(".start-now");
-
-    // Adicione um evento de clique ao botão
-    startNowButton.addEventListener("click", function() {
-        // Redirecione para a página de cadastro.html na pasta "front/cadastro"
-        window.location.href = "front/cadastro/cadastro.html";
-    });
-});
