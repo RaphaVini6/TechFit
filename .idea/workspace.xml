@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="65af5355-0a83-411f-8786-79d0357fb0d6" name="Changes" comment="Front e Back">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/cadastro/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/cadastro/cadastro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/cadastro/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/cadastro/estilo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/cadastro/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/cadastro/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/main/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/main/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/main/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +47,12 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/RaphaVini6/TechFit.git&quot;,
-    &quot;accountId&quot;: &quot;f48aa796-de07-4b74-adbb-2057a2e7e00e&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/RaphaVini6/TechFit.git",
+    "accountId": "73221da3-f3a8-4e19-9edc-1898fc065464"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -77,6 +75,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit\front\main" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -96,6 +99,7 @@
       <workItem from="1713896034374" duration="6598000" />
       <workItem from="1713988672236" duration="7370000" />
       <workItem from="1714066547324" duration="4668000" />
+      <workItem from="1714130561521" duration="7678000" />
     </task>
     <task id="LOCAL-00001" summary="Atualizado">
       <option name="closed" value="true" />
