@@ -4,23 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65af5355-0a83-411f-8786-79d0357fb0d6" name="Changes" comment="Update">
+    <list default="true" id="65af5355-0a83-411f-8786-79d0357fb0d6" name="Changes" comment="Front e Back">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager">
-    <option name="groupingKeys">
-      <option value="directory" />
-    </option>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -52,7 +51,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/RaphaVini6/TechFit.git&quot;,
-    &quot;accountId&quot;: &quot;73221da3-f3a8-4e19-9edc-1898fc065464&quot;
+    &quot;accountId&quot;: &quot;f48aa796-de07-4b74-adbb-2057a2e7e00e&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -68,30 +67,19 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/raphael.uchoa/Desktop/aaasdfadfa/TechFit/src/assets&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\raphael.uchoa\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\4063139\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit\src\assets" />
-      <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit" />
-      <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit\front\main" />
-    </key>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-2e7d6887c066-JavaScript-WS-241.15989.47" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-WS-241.15989.105" />
       </set>
     </attachedChunks>
   </component>
@@ -106,8 +94,9 @@
       <workItem from="1713809423327" duration="3960000" />
       <workItem from="1713896034374" duration="6598000" />
       <workItem from="1713988672236" duration="7370000" />
-      <workItem from="1714066547324" duration="4668000" />
-      <workItem from="1714130561521" duration="10923000" />
+      <workItem from="1714066547324" duration="5428000" />
+      <workItem from="1714153151582" duration="1027000" />
+      <workItem from="1714412996990" duration="3793000" />
     </task>
     <task id="LOCAL-00001" summary="Atualizado">
       <option name="closed" value="true" />
@@ -143,93 +132,13 @@
     </task>
     <task id="LOCAL-00005" summary="Front e Back">
       <option name="closed" value="true" />
-      <created>1714139909667</created>
+      <created>1714074342427</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1714139909667</updated>
+      <updated>1714074342428</updated>
     </task>
-    <task id="LOCAL-00006" summary="Front e Back">
-      <option name="closed" value="true" />
-      <created>1714140105415</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1714140105415</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Update">
-      <option name="closed" value="true" />
-      <created>1714140652344</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1714140652344</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Update">
-      <option name="closed" value="true" />
-      <created>1714140782239</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1714140782239</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Update">
-      <option name="closed" value="true" />
-      <created>1714140878920</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1714140878920</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Update">
-      <option name="closed" value="true" />
-      <created>1714140954642</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1714140954642</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Update">
-      <option name="closed" value="true" />
-      <created>1714141008667</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1714141008667</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Update">
-      <option name="closed" value="true" />
-      <created>1714141679148</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1714141679148</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Update">
-      <option name="closed" value="true" />
-      <created>1714142201767</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1714142201767</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Update">
-      <option name="closed" value="true" />
-      <created>1714142214898</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1714142214898</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Update">
-      <option name="closed" value="true" />
-      <created>1714142553088</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1714142553088</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +147,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Atualizado" />
     <MESSAGE value="Front e Back" />
-    <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Front e Back" />
   </component>
 </project>
