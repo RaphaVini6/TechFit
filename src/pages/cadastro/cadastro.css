@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../../assets/wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 500px;
+}
+
+.formm-wrapperr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.form-wrapper h1 {
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+    width: 320px;
+}
+
+.input-group label, .input-group input {
+    transition: transform .5s;
+    font-size: 16px;
+    color: #ffffff; /* Label color, input color managed in focus state */
+    position: absolute;
+    top: 50%;
+    padding: 0 5px;
+}
+
+.input-group label {
+    left: 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.input-group input {
+    width: 100%;
+    height: 40px;
+    color: #333;
+    padding: 0 10px;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+    background: transparent;
+    position: static;
+    transform: none; /* Default state has no transform */
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label {
+    transform: translateY(-175%);
+    font-size: 12px;
+}
+
+button.btn {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background: #f5a637;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.login-link {
+    color: #ffffff;
+    font-size: 15px;
+    margin: 15px 0 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.login-link a {
+    color: #062afc;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

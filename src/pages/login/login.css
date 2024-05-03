@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url('../assets/wallpaper.jpg'); /* Adicionando a imagem de fundo */
+    background-image: url('../../assets/wallpaper.jpg'); /* Adicionando a imagem de fundo */
     background-size: cover; /* Para cobrir toda a área */
     background-repeat: no-repeat; /* Evita repetir a imagem */
     font-family: 'Roboto', sans-serif; /* Fonte atualizada */
