@@ -642,3 +642,7 @@ nav {
     }
 }
 
+.link a.active {
+    color: var(--secondary-color); /* Ou qualquer outra cor para destacar */
+    border-bottom: 2px solid var(--secondary-color);
+}
