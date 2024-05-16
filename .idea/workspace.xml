@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65af5355-0a83-411f-8786-79d0357fb0d6" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/src/pages/404/404.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/404/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/local/local.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/local/local.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/shop/shop.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/shop/shop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/cadastro/cadastro.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/client/client.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/client/client.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/client/client2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/login/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cadastro/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cadastro/cadastro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cadastro/estilo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cadastro/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,11 +48,6 @@
         </map>
       </branch-storage>
     </excluded-from-favorite>
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="back" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -98,11 +95,11 @@
       <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit" />
-      <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit\front" />
       <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit\src\pages" />
       <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit\src\pages\login" />
       <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit\src\pages\cadastro" />
+      <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit" />
+      <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit\front\main" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -128,8 +125,6 @@
       <workItem from="1714475582968" duration="2194000" />
       <workItem from="1714650027365" duration="1318000" />
       <workItem from="1714735790833" duration="7452000" />
-      <workItem from="1715776187571" duration="988000" />
-      <workItem from="1715861165266" duration="2964000" />
     </task>
     <task id="LOCAL-00001" summary="Atualizado">
       <option name="closed" value="true" />
@@ -264,29 +259,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/back" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Atualizado" />
