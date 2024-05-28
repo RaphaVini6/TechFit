@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65af5355-0a83-411f-8786-79d0357fb0d6" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/src/pages/cadastro/cadastro.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/client/client.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/client/client.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/client/client2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/login/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cadastro/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cadastro/cadastro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cadastro/estilo.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cadastro/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/search/search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/users.db.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/404/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/404/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/client/client.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/client/client.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/client/client.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/client/client.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/client/client2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shop/shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shop/shop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shop/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shop/shop.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +33,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -78,7 +81,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/raphael.uchoa/Desktop/aaasdfadfa/TechFit/src/assets",
+    "last_opened_file_path": "C:/Users/raphael.uchoa/Desktop/aaasdfadfa/TechFit/src/pages/shop/imgss",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -91,21 +94,23 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit\src\pages\shop\imgss" />
+      <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit\src\pages\shop" />
       <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit\src\assets" />
       <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit\src\pages\404\imgs" />
+      <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit\src\assets" />
+      <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit\src\pages\shop\imgss" />
       <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit\src\pages" />
       <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit\src\pages\login" />
-      <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit\src\pages\cadastro" />
-      <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit" />
-      <recent name="C:\Users\raphael.uchoa\Desktop\aaasdfadfa\TechFit\front\main" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-WS-241.15989.105" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.17011.90" />
       </set>
     </attachedChunks>
   </component>
@@ -125,6 +130,10 @@
       <workItem from="1714475582968" duration="2194000" />
       <workItem from="1714650027365" duration="1318000" />
       <workItem from="1714735790833" duration="7452000" />
+      <workItem from="1716462730118" duration="636000" />
+      <workItem from="1716819334591" duration="98000" />
+      <workItem from="1716819447072" duration="2237000" />
+      <workItem from="1716895377141" duration="9708000" />
     </task>
     <task id="LOCAL-00001" summary="Atualizado">
       <option name="closed" value="true" />
@@ -254,7 +263,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714143348128</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Update">
+      <option name="closed" value="true" />
+      <created>1716821975475</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1716821975475</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Update">
+      <option name="closed" value="true" />
+      <created>1716822171236</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1716822171236</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

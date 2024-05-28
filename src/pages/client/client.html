@@ -3,67 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel do Usuário</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            margin: 0;
-            padding: 0;
+    <title>Página do Cliente</title>
+    <link rel="stylesheet" href="client.css">
+    <script>
+        function openTab(tabName) {
+            var i;
+            var x = document.getElementsByClassName("tab");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
         }
-        .header {
-            background-color: #444;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-        .main {
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
-        }
-        .card {
-            background: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 20px;
-            width: 30%;
-            margin: 10px;
-        }
-        .card h3 {
-            color: #333;
-        }
-        .footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #444;
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const token = localStorage.getItem('token');
+            const payload = JSON.parse(atob(token.split('.')[1]));
+            fetch(`/cliente/${payload.id}`)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('cliente-nome').innerText = data.nome;
+                    document.getElementById('cliente-email').innerText = data.email;
+                })
+                .catch(error => console.error('Erro:', error));
+        });
+    </script>
 </head>
 <body>
 <div class="header">
-    <h1>Bem-vindo ao Painel do Usuário</h1>
+    <h1>Bem-vindo, <span id="cliente-nome"></span></h1>
+    <p>Email: <span id="cliente-email"></span></p>
 </div>
-
+<!-- Restante do HTML permanece igual -->
 <div class="main">
     <div class="card">
-        <h3>Agendar Aula</h3>
-        <p>Reserve sua próxima sessão de treino facilmente.</p>
-        <button>Clique aqui</button>
+        <h3>Plano da Academia</h3>
+        <p>Visualize seu plano de treino personalizado.</p>
+        <button onclick="openTab('plano')">Visualizar</button>
     </div>
     <div class="card">
-        <h3>Progresso</h3>
-        <p>Acompanhe seu desenvolvimento e melhorias.</p>
-        <button>Clique aqui</button>
+        <h3>Configuração de Perfil</h3>
+        <p>Atualize suas informações pessoais.</p>
+        <button onclick="openTab('perfil')">Editar</button>
     </div>
     <div class="card">
-        <h3>Dicas de Saúde</h3>
-        <p>Leia dicas para manter um estilo de vida saudável.</p>
-        <button>Clique aqui</button>
+        <h3>Treino do Mês</h3>
+        <p>Confira o treino do mês e seu personal trainer.</p>
+        <button onclick="openTab('treino')">Visualizar</button>
     </div>
+</div>
+
+<div class="tabs">
+    <button class="tablink" onclick="openTab('plano')">Plano da Academia</button>
+    <button class="tablink" onclick="openTab('perfil')">Configuração de Perfil</button>
+    <button class="tablink" onclick="openTab('treino')">Treino do Mês</button>
+</div>
+
+<div id="plano" class="tab">
+    <h2>Plano da Academia</h2>
+    <!-- Conteúdo do Plano da Academia -->
+</div>
+
+<div id="perfil" class="tab" style="display:none;">
+    <h2>Configuração de Perfil</h2>
+    <!-- Conteúdo da Configuração de Perfil -->
+</div>
+
+<div id="treino" class="tab" style="display:none;">
+    <h2>Treino do Mês</h2>
+    <!-- Conteúdo do Treino do Mês -->
 </div>
 
 <div class="footer">

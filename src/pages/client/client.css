@@ -1,49 +1,70 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
+    background: #f4f4f4; /* Fundo cinza claro */
 }
 
-.background {
-    width: 2544px;
-    height: 1464px;
-    background: #292626;
+.header {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
 
-.box {
-    width: 335px;
-    height: 971px;
-    background: #1F2125;
-    border-radius: 41px;
+.main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-.box:nth-child(4) {
-    width: 336px;
+.card {
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
 }
 
-.title {
-    color: #72EA9A;
-    font-size: 96px;
-    font-weight: 400;
-    word-wrap: break-word;
+.card h3 {
+    color: #333;
+}
+
+.tabs {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.tablink {
+    background-color: #1F2125;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    color: white;
+    font-size: 17px;
+    border-radius: 10px 10px 0 0;
+}
+
+.tablink:hover {
+    background-color: #555;
+}
+
+.tab {
+    display: none;
+    padding: 6px 12px;
+    border-radius: 0 0 10px 10px;
+    background-color: #1F2125;
+    color: white;
 }
 
 .footer {
-    width: 2544px;
-    height: 333px;
-    background: #1F2125;
-}
-
-.day {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #444;
     color: white;
-    font-size: 40px;
-    font-weight: 400;
-    word-wrap: break-word;
-}
-
-.day-name {
-    color: #72EA9A;
-}
-
-.day-activity {
-    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
