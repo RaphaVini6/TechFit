@@ -12,11 +12,11 @@
 <body>
 <div class="wrapper">
     <div class="formm-wrapperr">
-        <form id="login-form" action="">
+        <form id="cadastro-form">
             <h1>Cadastro</h1>
             <div class="input-group">
-                <input type="text" id="usuario" required>
-                <label for="usuario">Nome</label>
+                <input type="text" id="nome" required>
+                <label for="nome">Nome</label>
             </div>
             <div class="input-group">
                 <input type="text" id="email" required>
@@ -26,11 +26,38 @@
                 <input type="password" id="senha" required>
                 <label for="senha">Senha</label>
             </div>
-            <button type="submit" class="btn">Entrar</button>
+            <button type="submit" class="btn">Cadastrar</button>
             <p class="login-link">Já possui cadastro? <a href="../login/login.html">Logar</a></p>
         </form>
     </div>
 </div>
+
+<script>
+    document.getElementById('cadastro-form').addEventListener('submit', async function(event) {
+        event.preventDefault();
+
+        const nome = document.getElementById('nome').value;
+        const email = document.getElementById('email').value;
+        const senha = document.getElementById('senha').value;
+
+        const response = await fetch('http://localhost:3000/cadastro', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ nome, email, senha })
+        });
+
+        if (response.ok) {
+            alert('Cadastro realizado com sucesso!');
+            window.location.href = '../login/login.html';
+        } else {
+            const error = await response.text();
+            alert('Erro ao cadastrar: ' + error);
+        }
+    });
+</script>
+
 </body>
 
 </html>
