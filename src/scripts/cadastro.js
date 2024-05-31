@@ -1,4 +1,4 @@
-document.getElementById('cadastro-form').addEventListener('submit', async function(event) {
+document.getElementById('cadastroForm').addEventListener('submit', async function(event) {
   event.preventDefault();
 
   const nome = document.getElementById('nome').value;
@@ -6,7 +6,7 @@ document.getElementById('cadastro-form').addEventListener('submit', async functi
   const senha = document.getElementById('senha').value;
 
   try {
-    const response = await fetch('http://localhost:3000/register', {
+    const response = await fetch('/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -14,14 +14,17 @@ document.getElementById('cadastro-form').addEventListener('submit', async functi
       body: JSON.stringify({ nome, email, senha })
     });
 
+    const data = await response.json();
+
     if (response.ok) {
-      alert('Cadastro realizado com sucesso!');
-      window.location.href = '../login/login.html';
+      alert('Usuário registrado com sucesso!');
+      // Redirecione para outra página ou limpe o formulário
+      window.location.href = '/'; // Redirecione para a página inicial, por exemplo
     } else {
-      const error = await response.text();
-      alert('Erro ao cadastrar: ' + error);
+      alert(`Erro ao registrar usuário: ${data.error}`);
     }
   } catch (error) {
-    alert('Erro ao cadastrar: ' + error.message);
+    console.error('Erro ao enviar solicitação de registro:', error);
+    alert('Erro ao registrar usuário');
   }
 });

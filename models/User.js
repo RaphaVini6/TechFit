@@ -1,13 +1,20 @@
-const db = require('../config/database');
+const { DataTypes } = require('sequelize');
+const sequelize = require('../config/database.js  ');
 
-module.exports = {
-  create: (nome, email, senha, callback) => {
-    db.run('INSERT INTO users (nome, email, senha) VALUES (?, ?, ?)', [nome, email, senha], callback);
+const User = sequelize.define('User', {
+  nome: {
+    type: DataTypes.STRING,
+    allowNull: false
   },
-  findByEmail: (email, callback) => {
-    db.get('SELECT * FROM users WHERE email = ?', [email], callback);
+  email: {
+    type: DataTypes.STRING,
+    allowNull: false,
+    unique: true
   },
-  findById: (id, callback) => {
-    db.get('SELECT * FROM users WHERE id = ?', [id], callback);
+  senha: {
+    type: DataTypes.STRING,
+    allowNull: false
   }
-};
+});
+
+module.exports = User;

@@ -4,21 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88d11170-000c-4fa8-a58f-8776f414314a" name="Changes" comment="atualizado">
-      <change afterPath="$PROJECT_DIR$/config/database.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database.sqlite" afterDir="false" />
+    <list default="true" id="65af5355-0a83-411f-8786-79d0357fb0d6" name="Changes" comment="Front e Back">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/cadastro/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cadastro/cadastro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/client/client.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/client/client.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scripts/cadastro.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/cadastro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/login.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +25,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -56,42 +51,54 @@
     &quot;assignee&quot;: &quot;RaphaVini6&quot;
   }
 }</component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/RaphaVini6/TechFit.git&quot;,
-    &quot;accountId&quot;: &quot;70386e58-f675-4309-a134-5e2dbde8ad28&quot;
+    &quot;accountId&quot;: &quot;f48aa796-de07-4b74-adbb-2057a2e7e00e&quot;
   }
 }</component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
+  &quot;associatedIndex&quot;: 5
 }</component>
-  <component name="ProjectId" id="2e4NB6qHHmvfeGmud0B3K46ExA9" />
+  <component name="ProjectId" id="2fSzlbNjSvgjFZgLvr2uEgNpEds" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Rafah\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/4063139/WebstormProjects/TechFit/config",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "database.query.execution",
+    "ts.external.directory.path": "C:\\Users\\4063139\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
+      "SQLite"
+    ]
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\4063139\WebstormProjects\TechFit\config" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -102,96 +109,91 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="88d11170-000c-4fa8-a58f-8776f414314a" name="Changes" comment="" />
-      <created>1711159759345</created>
+      <changelist id="65af5355-0a83-411f-8786-79d0357fb0d6" name="Changes" comment="" />
+      <created>1713809419324</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1711159759345</updated>
-      <workItem from="1711159761273" duration="557000" />
-      <workItem from="1711306167162" duration="767000" />
-      <workItem from="1713665592742" duration="323000" />
-      <workItem from="1713666080831" duration="4520000" />
-      <workItem from="1713732711588" duration="753000" />
-      <workItem from="1713747614004" duration="4987000" />
-      <workItem from="1713756895750" duration="510000" />
-      <workItem from="1713757463482" duration="21000" />
-      <workItem from="1716066089901" duration="30000" />
-      <workItem from="1717015152084" duration="274000" />
-      <workItem from="1717015429348" duration="1096000" />
-      <workItem from="1717126169851" duration="3232000" />
+      <updated>1713809419324</updated>
+      <workItem from="1713809423327" duration="3960000" />
+      <workItem from="1713896034374" duration="6598000" />
+      <workItem from="1713988672236" duration="7370000" />
+      <workItem from="1714066547324" duration="5428000" />
+      <workItem from="1714153151582" duration="1027000" />
+      <workItem from="1714412996990" duration="3793000" />
     </task>
-    <task id="LOCAL-00001" summary="atualizado">
+    <task id="LOCAL-00001" summary="Atualizado">
       <option name="closed" value="true" />
-      <created>1713670036471</created>
+      <created>1713814338821</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1713670036471</updated>
+      <updated>1713814338821</updated>
     </task>
-    <task id="LOCAL-00002" summary="atualizado">
+    <task id="LOCAL-00002" summary="Front e Back">
       <option name="closed" value="true" />
-      <created>1713671957069</created>
+      <created>1713901763646</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1713671957069</updated>
+      <updated>1713901763647</updated>
     </task>
-    <task id="LOCAL-00003" summary="atualizado">
+    <task id="LOCAL-00003" summary="Front e Back">
       <option name="closed" value="true" />
-      <created>1713732885883</created>
+      <created>1713906030947</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1713732885883</updated>
+      <updated>1713906030947</updated>
     </task>
-    <task id="LOCAL-00004" summary="atualizado">
+    <task id="LOCAL-00004" summary="Front e Back">
       <option name="closed" value="true" />
-      <created>1713732961701</created>
+      <created>1713998008864</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1713732961701</updated>
+      <updated>1713998008866</updated>
     </task>
-    <task id="LOCAL-00005" summary="atualizado">
+    <task id="LOCAL-00005" summary="Front e Back">
       <option name="closed" value="true" />
-      <created>1713733127972</created>
+      <created>1714074342427</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1713733127972</updated>
+      <updated>1714074342428</updated>
     </task>
-    <task id="LOCAL-00006" summary="atualizado">
-      <option name="closed" value="true" />
-      <created>1713733414799</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1713733414799</updated>
-    </task>
-    <task id="LOCAL-00007" summary="atualizado">
-      <option name="closed" value="true" />
-      <created>1713752407879</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1713752407879</updated>
-    </task>
-    <task id="LOCAL-00008" summary="atualizado">
-      <option name="closed" value="true" />
-      <created>1713752754659</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1713752754659</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="atualizado" />
-    <option name="LAST_COMMIT_MESSAGE" value="atualizado" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Atualizado" />
+    <MESSAGE value="Front e Back" />
+    <option name="LAST_COMMIT_MESSAGE" value="Front e Back" />
   </component>
 </project>
