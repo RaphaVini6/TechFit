@@ -1,24 +1,28 @@
-document.getElementById('login-form').addEventListener('submit', function(event) {
+document.getElementById('login-form').addEventListener('submit', async function(event) {
   event.preventDefault();
+
   const email = document.getElementById('email').value;
   const senha = document.getElementById('senha').value;
 
-  fetch('/login', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ email, senha })
-  })
-    .then(response => response.json())
-    .then(data => {
-      if (data.token) {
-        localStorage.setItem('token', data.token);
-        const payload = JSON.parse(atob(data.token.split('.')[1]));
-        window.location.href = `/pages/cliente/client.html?id=${payload.id}`;
-      } else {
-        alert('Erro no login');
-      }
-    })
-    .catch(error => console.error('Erro:', error));
+  try {
+    const response = await fetch('http://localhost:3000/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ email, senha })
+    });
+
+    if (response.ok) {
+      const data = await response.json();
+      localStorage.setItem('token', data.token); // Armazena o token JWT
+      alert('Login realizado com sucesso!');
+      window.location.href = '../client/client.html'; // Redireciona para a página do cliente
+    } else {
+      const error = await response.text();
+      alert('Erro ao fazer login: ' + error);
+    }
+  } catch (error) {
+    alert('Erro ao fazer login: ' + error.message);
+  }
 });

@@ -1,9 +1,13 @@
-const mongoose = require('mongoose');
+const db = require('../config/database');
 
-const UserSchema = new mongoose.Schema({
-  nome: { type: String, required: true },
-  email: { type: String, required: true, unique: true },
-  senha: { type: String, required: true }
-});
-
-module.exports = mongoose.model('User', UserSchema);
+module.exports = {
+  create: (nome, email, senha, callback) => {
+    db.run('INSERT INTO users (nome, email, senha) VALUES (?, ?, ?)', [nome, email, senha], callback);
+  },
+  findByEmail: (email, callback) => {
+    db.get('SELECT * FROM users WHERE email = ?', [email], callback);
+  },
+  findById: (id, callback) => {
+    db.get('SELECT * FROM users WHERE id = ?', [id], callback);
+  }
+};

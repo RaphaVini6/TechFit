@@ -4,49 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página do Cliente</title>
-    <link rel="stylesheet" href="client.css">
+    <link rel="stylesheet" href="../../pages/client/client.css">
     <style>
         /* Aqui você pode adicionar estilos específicos, se necessário */
     </style>
-    <script>
-        async function obterInformacoesCliente() {
-            const token = localStorage.getItem('token');
-            if (!token) {
-                alert('Você não está logado. Redirecionando para a página de login.');
-                window.location.href = '../login/login.html';
-                return;
-            }
-
-            const response = await fetch('http://localhost:3000/cliente', {
-                method: 'GET',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': 'Bearer ' + token
-                }
-            });
-
-            if (response.ok) {
-                const data = await response.json();
-                document.getElementById('cliente-nome').innerText = data.nome;
-                document.getElementById('cliente-email').innerText = data.email;
-                // Exiba outras informações do cliente conforme necessário
-            } else {
-                const error = await response.text();
-                alert('Erro ao obter informações do cliente: ' + error);
-                localStorage.removeItem('token'); // Remove o token inválido
-                window.location.href = '../login/login.html';
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', obterInformacoesCliente);
-    </script>
+    <script src="../../scripts/client.js"></script>
 </head>
 <body>
-
 <div class="header">
     <h1>Bem-vindo ao Painel do Cliente</h1>
 </div>
-
 <div class="main">
     <div class="card">
         <h3>Plano da Academia</h3>
@@ -64,33 +31,27 @@
         <button onclick="openTab('treino')">Visualizar</button>
     </div>
 </div>
-
 <div class="tabs">
     <button class="tablink" onclick="openTab('plano')">Plano da Academia</button>
     <button class="tablink" onclick="openTab('perfil')">Configuração de Perfil</button>
     <button class="tablink" onclick="openTab('treino')">Treino do Mês</button>
 </div>
-
 <div id="plano" class="tab">
     <h2>Plano da Academia</h2>
     <!-- Conteúdo do Plano da Academia -->
 </div>
-
 <div id="perfil" class="tab" style="display:none;">
     <h2>Configuração de Perfil</h2>
     <!-- Conteúdo da Configuração de Perfil -->
     <p>Nome: <span id="cliente-nome"></span></p>
     <p>Email: <span id="cliente-email"></span></p>
 </div>
-
 <div id="treino" class="tab" style="display:none;">
     <h2>Treino do Mês</h2>
     <!-- Conteúdo do Treino do Mês -->
 </div>
-
 <div class="footer">
     <p>Direitos reservados © 2024 Academia X</p>
 </div>
-
 </body>
 </html>
