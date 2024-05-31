@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     const token = localStorage.getItem('token');
     if (!token) {
         alert('Você não está logado. Redirecionando para a página de login.');
-        window.location.href = '../login/login.html';
+        window.location.href = '../client/client.html';
         return;
     }
 
