@@ -1,22 +1,22 @@
-const { Sequelize, DataTypes } = require('sequelize');
+const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
 
 const User = sequelize.define('User', {
-    nome: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    email: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        unique: true
-    },
-    senha: {
-        type: DataTypes.STRING,
-        allowNull: false
-    }
+  nome: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  email: {
+    type: DataTypes.STRING,
+    allowNull: false,
+    unique: true
+  },
+  senha: {
+    type: DataTypes.STRING,
+    allowNull: false
+  }
+}, {
+  timestamps: true // Adiciona os campos createdAt e updatedAt automaticamente
 });
-
-sequelize.sync();
 
 module.exports = User;
