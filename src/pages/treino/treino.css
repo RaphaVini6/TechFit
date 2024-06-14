@@ -1,0 +1,71 @@
+/* Estilos gerais */
+body {
+    font-family: Inter, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c2b2b; /* Fundo mais claro */
+    color: #333333; /* Texto mais escuro para melhor contraste */
+}
+
+/* Estilos para a tabela de treino */
+.training-table {
+    width: 90%; /* Reduzindo a largura para ser mais responsiva */
+    max-width: 1200px; /* Definindo largura máxima para evitar que fique muito esticado em telas maiores */
+    margin: 50px auto; /* Centralizando a tabela na página */
+    position: relative;
+}
+
+.background-rectangle {
+    width: 100%;
+    height: 100%;
+    background-color: #000000; /* Fundo cinza claro */
+    border-radius: 41px;
+    position: absolute;
+    z-index: -1;
+}
+
+.day-column {
+    float: left;
+    width: calc(20% - 20px); /* Calculando largura dinâmica para as colunas de dias */
+    margin-right: 20px; /* Espaço entre as colunas */
+    height: 600px; /* Reduzindo a altura das colunas para caber na tela */
+    padding: 20px;
+    box-sizing: border-box; /* Garantindo que o padding não aumente a largura */
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar as colunas */
+}
+
+.training-day {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.day-label {
+    color: #333333; /* Texto mais escuro para melhor legibilidade */
+    font-size: 24px; /* Reduzindo o tamanho da fonte para ser mais adequado */
+    font-weight: 600; /* Mais peso na fonte para os dias */
+}
+
+.training-label {
+    color: #555555; /* Texto mais escuro para contraste adequado */
+    font-size: 18px; /* Tamanho menor para descrição dos treinos */
+}
+
+.training-table-title {
+    color: #333333; /* Texto mais escuro para melhor legibilidade */
+    font-size: 36px; /* Reduzindo o tamanho do título */
+    font-weight: 700; /* Aumentando o peso para o título se destacar */
+    text-align: center;
+    margin: 30px 0; /* Maior margem superior e inferior para separar do conteúdo */
+}
+
+.bottom-rectangle {
+    width: 100%;
+    height: 50px; /* Reduzindo a altura do retângulo no final */
+    background-color: #dddddd; /* Fundo cinza claro */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+

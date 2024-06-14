@@ -1,70 +1,41 @@
 body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #f4f4f4; /* Fundo cinza claro */
-}
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
 
-.header {
-    background-color: #444;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
+        .tabs {
+            background-color: #333;
+            overflow: hidden;
+        }
 
-.main {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-}
+        .tablink {
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: background-color 0.3s;
+            color: white;
+        }
 
-.card {
-    background: white;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding: 20px;
-    width: 30%;
-    margin: 10px;
-}
+        .tablink:hover {
+            background-color: #555;
+        }
 
-.card h3 {
-    color: #333;
-}
+        .tab {
+            display: none;
+            padding: 20px;
+        }
 
-.tabs {
-    overflow: hidden;
-    background-color: #333;
-}
-
-.tablink {
-    background-color: #1F2125;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    color: white;
-    font-size: 17px;
-    border-radius: 10px 10px 0 0;
-}
-
-.tablink:hover {
-    background-color: #555;
-}
-
-.tab {
-    display: none;
-    padding: 6px 12px;
-    border-radius: 0 0 10px 10px;
-    background-color: #1F2125;
-    color: white;
-}
-
-.footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #444;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }

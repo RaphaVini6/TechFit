@@ -1,57 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página do Cliente</title>
     <link rel="stylesheet" href="../../pages/client/client.css">
-    <style>
-        /* Aqui você pode adicionar estilos específicos, se necessário */
-    </style>
     <script src="../../scripts/client.js"></script>
 </head>
 <body>
-<div class="header">
-    <h1>Bem-vindo ao Painel do Cliente</h1>
-</div>
-<div class="main">
-    <div class="card">
-        <h3>Plano da Academia</h3>
-        <p>Visualize seu plano de treino personalizado.</p>
-        <button onclick="openTab('plano')">Visualizar</button>
-    </div>
-    <div class="card">
-        <h3>Configuração de Perfil</h3>
-        <p>Atualize suas informações pessoais.</p>
-        <button onclick="openTab('perfil')">Editar</button>
-    </div>
-    <div class="card">
-        <h3>Treino do Mês</h3>
-        <p>Confira o treino do mês e seu personal trainer.</p>
-        <button onclick="openTab('treino')">Visualizar</button>
-    </div>
-</div>
+
 <div class="tabs">
     <button class="tablink" onclick="openTab('plano')">Plano da Academia</button>
     <button class="tablink" onclick="openTab('perfil')">Configuração de Perfil</button>
     <button class="tablink" onclick="openTab('treino')">Treino do Mês</button>
 </div>
+
 <div id="plano" class="tab">
     <h2>Plano da Academia</h2>
-    <!-- Conteúdo do Plano da Academia -->
+    <p>Aqui você pode incluir o conteúdo específico do Plano da Academia.</p>
+    <a href="pages/planos/planos.html">Ver Planos</a>
 </div>
+
 <div id="perfil" class="tab" style="display:none;">
     <h2>Configuração de Perfil</h2>
     <!-- Conteúdo da Configuração de Perfil -->
     <p>Nome: <span id="cliente-nome"></span></p>
     <p>Email: <span id="cliente-email"></span></p>
 </div>
+
 <div id="treino" class="tab" style="display:none;">
     <h2>Treino do Mês</h2>
     <!-- Conteúdo do Treino do Mês -->
+    <p>Aqui você pode incluir o conteúdo do Treino do Mês.</p>
 </div>
+
 <div class="footer">
     <p>Direitos reservados © 2024 Academia X</p>
 </div>
+
+<script>
+    function openTab(tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tab");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+    }
+</script>
+
 </body>
 </html>

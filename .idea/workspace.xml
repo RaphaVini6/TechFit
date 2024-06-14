@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65af5355-0a83-411f-8786-79d0357fb0d6" name="Changes" comment="Atualizado">
+      <change afterPath="$PROJECT_DIR$/src/pages/planos/plano.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/planos/planos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/treino/treino.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/treino/treino.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cadastro/cadastro.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cadastro/cadastro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/client/client.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/client/client.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/client/client.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/client/client.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -71,6 +77,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/raphael.uchoa/PycharmProjects/TechFit/src/assets",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -116,7 +123,7 @@
       <workItem from="1714412996990" duration="3793000" />
       <workItem from="1717194347746" duration="374000" />
       <workItem from="1717194725880" duration="2425000" />
-      <workItem from="1718365541879" duration="7813000" />
+      <workItem from="1718365541879" duration="10225000" />
     </task>
     <task id="LOCAL-00001" summary="Atualizado">
       <option name="closed" value="true" />
@@ -206,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718374291505</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Atualizado">
+      <option name="closed" value="true" />
+      <created>1718374723614</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1718374723614</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
