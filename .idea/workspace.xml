@@ -4,23 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65af5355-0a83-411f-8786-79d0357fb0d6" name="Changes" comment="Atualizado">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/config/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/migrations/20240614052303-create-user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/models/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/models/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/identifier.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="65af5355-0a83-411f-8786-79d0357fb0d6" name="Changes" comment="Feito">
+      <change afterPath="$PROJECT_DIR$/src/assets/Creatina.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Pre-Treino.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5ed67b3c-f51f-4df2-8f13-6189ab82a225.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/898da4a9-420e-40a1-8239-aa5d9d1b1bbc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/898da4a9-420e-40a1-8239-aa5d9d1b1bbc/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cadastro/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cadastro/cadastro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/cadastro.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/cadastro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shop/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shop/shop.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +78,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/4063139/WebstormProjects/TechFit/config",
+    "last_opened_file_path": "C:/Users/4063139/WebstormProjects/TechFit/src/assets",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -108,6 +100,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\4063139\WebstormProjects\TechFit\src\assets" />
       <recent name="C:\Users\4063139\WebstormProjects\TechFit\config" />
       <recent name="C:\Users\raphael.uchoa\PycharmProjects\TechFit\src\assets" />
     </key>
@@ -138,7 +131,8 @@
       <workItem from="1718365541879" duration="10225000" />
       <workItem from="1718336715778" duration="636000" />
       <workItem from="1718339018022" duration="1722000" />
-      <workItem from="1718341737019" duration="2235000" />
+      <workItem from="1718341737019" duration="2664000" />
+      <workItem from="1718346782347" duration="208000" />
     </task>
     <task id="LOCAL-00001" summary="Atualizado">
       <option name="closed" value="true" />
@@ -236,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718374723614</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Feito">
+      <option name="closed" value="true" />
+      <created>1718345250434</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1718345250434</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +271,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Front e Back" />
     <MESSAGE value="Atualizado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Atualizado" />
+    <MESSAGE value="Feito" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feito" />
   </component>
 </project>
