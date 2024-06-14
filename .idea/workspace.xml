@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65af5355-0a83-411f-8786-79d0357fb0d6" name="Changes" comment="Atualizado">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_05_2024_16_11_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_05_2024_16_11__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_05_2024_14_32_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_05_2024_14_32__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.sqlite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cadastro/cadastro.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cadastro/cadastro.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cadastro/cadastro.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cadastro/cadastro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/cadastro.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/cadastro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/login.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +114,7 @@
       <workItem from="1714412996990" duration="3793000" />
       <workItem from="1717194347746" duration="374000" />
       <workItem from="1717194725880" duration="2425000" />
-      <workItem from="1718365541879" duration="3035000" />
+      <workItem from="1718365541879" duration="4834000" />
     </task>
     <task id="LOCAL-00001" summary="Atualizado">
       <option name="closed" value="true" />
@@ -196,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717195970410</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Atualizado">
+      <option name="closed" value="true" />
+      <created>1718369747128</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1718369747128</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
