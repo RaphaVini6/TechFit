@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="database">
-  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.52">
+  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.53">
     <root id="1">
       <ServerVersion>3.45.1</ServerVersion>
     </root>
@@ -1599,9 +1599,9 @@
       <System>1</System>
     </table>
     <column id="559" parent="555" name="name">
-      <DasType>VARCHAR(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>VARCHAR(255)|0s</StoredType>
     </column>
     <index id="560" parent="555" name="sqlite_autoindex_SequelizeMeta_1">
       <ColNames>name</ColNames>
@@ -1619,33 +1619,33 @@
     </key>
     <column id="563" parent="556" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DasType>INTEGER|0s</DasType>
       <Position>1</Position>
+      <StoredType>INTEGER|0s</StoredType>
     </column>
     <column id="564" parent="556" name="nome">
-      <DasType>VARCHAR(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>VARCHAR(255)|0s</StoredType>
     </column>
     <column id="565" parent="556" name="email">
-      <DasType>VARCHAR(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>VARCHAR(255)|0s</StoredType>
     </column>
     <column id="566" parent="556" name="senha">
-      <DasType>VARCHAR(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
+      <StoredType>VARCHAR(255)|0s</StoredType>
     </column>
     <column id="567" parent="556" name="createdAt">
-      <DasType>DATETIME|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
+      <StoredType>DATETIME|0s</StoredType>
     </column>
     <column id="568" parent="556" name="updatedAt">
-      <DasType>DATETIME|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
+      <StoredType>DATETIME|0s</StoredType>
     </column>
     <index id="569" parent="556" name="sqlite_autoindex_Users_1">
       <ColNames>email</ColNames>
@@ -1661,24 +1661,24 @@
       <UnderlyingIndexName>sqlite_autoindex_Users_1</UnderlyingIndexName>
     </key>
     <column id="572" parent="557" name="type">
-      <DasType>TEXT|0s</DasType>
       <Position>1</Position>
+      <StoredType>TEXT|0s</StoredType>
     </column>
     <column id="573" parent="557" name="name">
-      <DasType>TEXT|0s</DasType>
       <Position>2</Position>
+      <StoredType>TEXT|0s</StoredType>
     </column>
     <column id="574" parent="557" name="tbl_name">
-      <DasType>TEXT|0s</DasType>
       <Position>3</Position>
+      <StoredType>TEXT|0s</StoredType>
     </column>
     <column id="575" parent="557" name="rootpage">
-      <DasType>INT|0s</DasType>
       <Position>4</Position>
+      <StoredType>INT|0s</StoredType>
     </column>
     <column id="576" parent="557" name="sql">
-      <DasType>TEXT|0s</DasType>
       <Position>5</Position>
+      <StoredType>TEXT|0s</StoredType>
     </column>
     <column id="577" parent="558" name="name">
       <Position>1</Position>

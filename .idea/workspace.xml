@@ -5,14 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65af5355-0a83-411f-8786-79d0357fb0d6" name="Changes" comment="Feito">
-      <change afterPath="$PROJECT_DIR$/src/assets/Creatina.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/Pre-Treino.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5ed67b3c-f51f-4df2-8f13-6189ab82a225.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/898da4a9-420e-40a1-8239-aa5d9d1b1bbc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/898da4a9-420e-40a1-8239-aa5d9d1b1bbc/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0114a7f6-e965-4fcf-b4e8-42817dbc8a18.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0114a7f6-e965-4fcf-b4e8-42817dbc8a18.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/026e9c76-5610-4ab8-8fa8-abfb559b065b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/026e9c76-5610-4ab8-8fa8-abfb559b065b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/shop/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shop/shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config/config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/migrations/20240614052303-create-user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/models/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/models/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identifier.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/404/404.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/404/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/cadastro/cadastro.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/cadastro/cadastro.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/client/client.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/client/client.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/local/local.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/local/local.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/planos/plano.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/planos/planos.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shop/shop.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/shop/shop.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/treino/treino.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/treino/treino.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/cadastro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/client.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +112,11 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "fix/all-project",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/4063139/WebstormProjects/TechFit/src/assets",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -108,7 +147,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.17890.13" />
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-WS-252.23892.411" />
       </set>
     </attachedChunks>
   </component>
@@ -133,6 +172,8 @@
       <workItem from="1718339018022" duration="1722000" />
       <workItem from="1718341737019" duration="2664000" />
       <workItem from="1718346782347" duration="208000" />
+      <workItem from="1755279979275" duration="405000" />
+      <workItem from="1755485961142" duration="645000" />
     </task>
     <task id="LOCAL-00001" summary="Atualizado">
       <option name="closed" value="true" />
