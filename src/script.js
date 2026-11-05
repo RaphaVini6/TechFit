@@ -1,8 +1,8 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function () {
   const navLinks = document.querySelectorAll('.nav__links li a');
 
   function clearActiveStates() {
-    navLinks.forEach(link => link.classList.remove('active'));
+    navLinks.forEach((link) => link.classList.remove('active'));
   }
 
   function scrollToSection(event, target) {
@@ -13,12 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   navLinks.forEach((link, index) => {
-    const targets = [
-      'header',
-      '.explore__grid',
-      '.join__container h2.section__header',
-      '.price__grid'
-    ];
+    const targets = ['header', '.explore__grid', '.join__container h2.section__header', '.price__grid'];
 
     link.addEventListener('click', (event) => scrollToSection(event, targets[index]));
   });
@@ -45,8 +40,8 @@ document.addEventListener("DOMContentLoaded", function() {
     showReview(currentReview);
   }
 
-  prevButtons.forEach(button => button.addEventListener('click', showPrevReview));
-  nextButtons.forEach(button => button.addEventListener('click', showNextReview));
+  prevButtons.forEach((button) => button.addEventListener('click', showPrevReview));
+  nextButtons.forEach((button) => button.addEventListener('click', showNextReview));
 
   showReview(currentReview); // Show the first review initially
 });

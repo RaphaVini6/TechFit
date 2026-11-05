@@ -4,47 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechShop - Suplementos</title>
+    <link rel="stylesheet" href="../../base.css">
     <link rel="stylesheet" href="shop.css">
 </head>
 <body>
 <header>
     <div class="container">
-        <img class="logo" src="imgss/logo.png" alt="Logo">
+        <img class="logo" src="../../assets/logo0.png" alt="TechFit">
         <h1 class="title">TechShop</h1>
     </div>
 </header>
 <main>
     <div class="container">
         <div class="card">
-            <img class="product" src="../assets/img.png" alt="Whey Protein">
+            <img class="product" src="../../assets/img.png" alt="Pote de Whey Protein Concentrado">
             <div class="description">
                 <h2>WHEY PROTEIN CONCENTRADO (1KG) - GROWTH SUPPLEMENTS</h2>
                 <p>Preço: R$ 99,90</p>
+                <button type="button" class="add-cart" data-nome="Whey Protein Concentrado 1kg" data-preco="99.90">Adicionar ao carrinho</button>
             </div>
         </div>
         <div class="card2">
-            <img class="product2" src="../assets/Creatina.png" alt="Creatine">
+            <img class="product2" src="../../assets/Creatina.png" alt="Pote de creatina Darkness">
             <div class="description2">
                 <h2>CREATINE Darkness</h2>
                 <p>Indicado para atletas que buscam potencializar seus resultados em treinamentos intensos.</p>
                 <p>Preço: R$ 89,90</p>
+                <button type="button" class="add-cart" data-nome="Creatine Darkness" data-preco="89.90">Adicionar ao carrinho</button>
             </div>
         </div>
         <div class="card3">
-            <img class="product" src="../assets/Pre-Treino.png" alt="Pre Treino">
+            <img class="product" src="../../assets/Pre-Treino.png" alt="Pote de pré-treino Amino Hard 10">
             <div class="description3">
                 <h2>Amino Hard 10</h2>
                 <p>Aumente a sua recuperação muscular para mais treinos intensos.</p>
                 <p>Preço: R$ 79,90</p>
+                <button type="button" class="add-cart" data-nome="Amino Hard 10" data-preco="79.90">Adicionar ao carrinho</button>
             </div>
         </div>
     </div>
 </main>
+<section class="cart" aria-labelledby="cart-titulo">
+    <div class="container">
+        <h2 id="cart-titulo">Carrinho</h2>
+        <p id="cart-vazio">Seu carrinho está vazio.</p>
+        <ul id="cart-lista"></ul>
+        <p class="cart-total" id="cart-total" hidden></p>
+        <button type="button" id="cart-limpar" hidden>Limpar carrinho</button>
+        <p class="cart-aviso" id="cart-aviso" hidden>Pagamento online ainda não está disponível nesta versão.</p>
+    </div>
+</section>
 <footer>
     <div class="footer">
         <p>Projeto de Laboratório de Engenharia de Software - 2024.</p>
     </div>
 </footer>
-<script src="script.js"></script>
+<script src="cart.js"></script>
 </body>
 </html>

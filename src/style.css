@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
     --primary-color: #282626;
@@ -645,4 +645,123 @@ nav {
 .link a.active {
     color: var(--secondary-color); /* Ou qualquer outra cor para destacar */
     border-bottom: 2px solid var(--secondary-color);
+}
+
+/* ===== Camada tecnológica (mesmo tema das páginas internas) ===== */
+
+:root {
+    --cyan: #38e1ff;
+    --line: rgba(114, 234, 154, 0.2);
+    --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+}
+
+body {
+    color: var(--white);
+    background-color: #07090c;
+    background-image:
+        radial-gradient(900px 500px at 85% -10%, rgba(114, 234, 154, 0.16), transparent 60%),
+        radial-gradient(700px 500px at -10% 60%, rgba(111, 19, 248, 0.18), transparent 60%),
+        linear-gradient(rgba(114, 234, 154, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(114, 234, 154, 0.045) 1px, transparent 1px);
+    background-size: auto, auto, 44px 44px, 44px 44px;
+    background-attachment: fixed;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    max-width: none;
+    padding: 1rem max(1rem, calc((100% - var(--max-width)) / 2 + 1rem));
+    background: rgba(7, 9, 12, 0.8);
+    border-bottom: 1px solid var(--line);
+    backdrop-filter: blur(10px);
+}
+
+.btn {
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: #04120a;
+    background: linear-gradient(135deg, var(--secondary-color), var(--cyan));
+    box-shadow: 0 0 24px rgba(114, 234, 154, 0.25);
+}
+
+.btn:hover {
+    color: #04120a;
+    background: linear-gradient(135deg, var(--cyan), var(--secondary-color));
+    box-shadow: 0 0 34px rgba(56, 225, 255, 0.4);
+}
+
+.price__btn {
+    color: var(--secondary-color);
+    background: transparent;
+    box-shadow: none;
+}
+
+.price__btn:hover {
+    color: #04120a;
+    background: linear-gradient(135deg, var(--secondary-color), var(--cyan));
+}
+
+.section__header::before {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+.explore__card,
+.price__card,
+.join__grid {
+    position: relative;
+    background: rgba(14, 18, 24, 0.85);
+    border: 1px solid var(--line);
+    backdrop-filter: blur(8px);
+}
+
+.explore__card::before,
+.price__card::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--secondary-color), var(--cyan), transparent);
+}
+
+.explore__card:hover,
+.price__card:hover {
+    background: rgba(7, 9, 12, 0.95);
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 24px rgba(114, 234, 154, 0.25);
+}
+
+.explore__card span,
+.join__card span {
+    background: linear-gradient(135deg, var(--secondary-color-dark), var(--cyan));
+}
+
+.header__content h4 {
+    font-family: var(--mono);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.header__content h1 span {
+    -webkit-text-stroke: 1px var(--secondary-color);
+    text-shadow: 0 0 30px rgba(114, 234, 154, 0.5);
+}
+
+.review {
+    background-color: rgba(14, 18, 24, 0.85);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.footer__bar {
+    font-family: var(--mono);
+    color: #8b95a3;
 }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Admin - TechFit</title>
+    <link rel="stylesheet" href="../../base.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<header class="topo">
+    <h1>Painel Admin</h1>
+    <nav>
+        <a href="../client/client.html">Área do cliente</a>
+        <button type="button" id="btn-sair">Sair</button>
+    </nav>
+</header>
+
+<main>
+    <p id="msg" class="msg" role="alert" hidden></p>
+
+    <section aria-labelledby="t-usuarios">
+        <h2 id="t-usuarios">Usuários</h2>
+        <div class="tabela-wrap">
+            <table>
+                <thead><tr><th>ID</th><th>Nome</th><th>E-mail</th><th>Plano</th><th>Papel</th><th>Ações</th></tr></thead>
+                <tbody id="usuarios"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <section aria-labelledby="t-planos">
+        <h2 id="t-planos">Planos</h2>
+        <div class="tabela-wrap">
+            <table>
+                <thead><tr><th>ID</th><th>Nome</th><th>Preço (R$)</th><th>Benefícios (um por linha)</th><th>Ações</th></tr></thead>
+                <tbody id="planos"></tbody>
+            </table>
+        </div>
+
+        <form id="form-novo-plano" class="novo">
+            <h3>Novo plano</h3>
+            <label for="np-nome">Nome</label>
+            <input id="np-nome" type="text" required>
+            <label for="np-preco">Preço (R$)</label>
+            <input id="np-preco" type="number" min="0" step="1" value="0" required>
+            <label for="np-benef">Benefícios (um por linha)</label>
+            <textarea id="np-benef" rows="3"></textarea>
+            <button type="submit">Criar plano</button>
+        </form>
+    </section>
+</main>
+
+<script src="../../scripts/ui.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>

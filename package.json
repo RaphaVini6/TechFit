@@ -1,16 +1,46 @@
 {
-  "name": "meu-projeto",
+  "name": "techfit",
   "version": "1.0.0",
+  "description": "Site e API da academia TechFit",
   "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "db:up": "docker compose up -d db",
+    "db:down": "docker compose down",
+    "db:setup": "node scripts/setup-db.js",
+    "test": "jest --runInBand",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
   "dependencies": {
-    "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
-    "body-parser": "^1.20.2",
     "cors": "^2.8.5",
+    "dotenv": "^18.0.9",
     "express": "^4.19.2",
+    "express-rate-limit": "^8.7.3",
+    "helmet": "^8.3.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^5.13.22",
-    "sequelize": "^6.37.3",
-    "sqlite3": "^5.1.7"
+    "pg": "^8.23.1",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.14.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.14.0",
+    "jest": "^30.5.2",
+    "prettier": "^3.9.10",
+    "supertest": "^7.3.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "setupFiles": [
+      "<rootDir>/tests/setup-env.js"
+    ],
+    "testMatch": [
+      "<rootDir>/tests/**/*.test.js"
+    ]
   }
 }

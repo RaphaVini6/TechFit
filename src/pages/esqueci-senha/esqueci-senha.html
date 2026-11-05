@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar senha - TechFit</title>
+    <link rel="stylesheet" href="../../base.css">
+    <link rel="stylesheet" href="../login/login.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="form-wrapper">
+        <form id="esqueci-form">
+            <a href="../../index.html"><img class="logo-form" src="../../assets/logo0.png" alt="TechFit"></a>
+            <h1>Recuperar senha</h1>
+            <p id="msg" class="msg" role="alert" hidden></p>
+            <div class="input-group">
+                <input type="email" id="email" autocomplete="email" required>
+                <label for="email">Email</label>
+            </div>
+            <button type="submit">Enviar link</button>
+            <p class="login-link"><a href="../login/login.html">Voltar ao login</a></p>
+        </form>
+    </div>
+</div>
+<script src="../../scripts/ui.js"></script>
+<script>
+document.getElementById('esqueci-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  try {
+    const r = await fetch('/esqueci-senha', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: document.getElementById('email').value })
+    });
+    const dados = await r.json();
+    showMessage(dados.message || dados.error, r.ok ? 'success' : 'error');
+  } catch (erro) {
+    showMessage('Não foi possível conectar ao servidor.');
+  }
+});
+</script>
+</body>
+</html>

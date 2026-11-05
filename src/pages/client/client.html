@@ -3,51 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página do Cliente</title>
+    <title>Área do Cliente - TechFit</title>
+    <link rel="stylesheet" href="../../base.css">
     <link rel="stylesheet" href="../../pages/client/client.css">
-    <script src="../../scripts/client.js"></script>
 </head>
 <body>
 
-<div class="tabs">
-    <button class="tablink" onclick="openTab('plano')">Plano da Academia</button>
-    <button class="tablink" onclick="openTab('perfil')">Configuração de Perfil</button>
-    <button class="tablink" onclick="openTab('treino')">Treino do Mês</button>
+<div class="tabs" role="tablist">
+    <button class="tablink" role="tab" aria-controls="plano" onclick="openTab('plano', this)">Plano da Academia</button>
+    <button class="tablink" role="tab" aria-controls="perfil" onclick="openTab('perfil', this)">Configuração de Perfil</button>
+    <button class="tablink" role="tab" aria-controls="treino" onclick="openTab('treino', this)">Treino do Mês</button>
+    <a class="tablink tablink--admin" id="link-admin" href="../admin/admin.html" hidden>Painel admin</a>
+    <button class="tablink tablink--sair" id="btn-sair" type="button">Sair</button>
 </div>
 
-<div id="plano" class="tab">
+<p id="msg" class="msg" role="alert" hidden></p>
+
+<div id="plano" class="tab" role="tabpanel">
     <h2>Plano da Academia</h2>
-    <p>Aqui você pode incluir o conteúdo específico do Plano da Academia.</p>
-    <a href="pages/planos/planos.html">Ver Planos</a>
+    <p>Seu plano atual: <strong id="plano-atual">carregando...</strong></p>
+    <div id="lista-planos" class="planos"></div>
 </div>
 
-<div id="perfil" class="tab" style="display:none;">
+<div id="perfil" class="tab" role="tabpanel" style="display:none;">
     <h2>Configuração de Perfil</h2>
-    <!-- Conteúdo da Configuração de Perfil -->
-    <p>Nome: <span id="cliente-nome"></span></p>
-    <p>Email: <span id="cliente-email"></span></p>
+
+    <form id="form-perfil" class="card-form">
+        <h3>Meus dados</h3>
+        <label for="cliente-nome">Nome</label>
+        <input type="text" id="cliente-nome" autocomplete="name" required>
+        <label for="cliente-email">E-mail</label>
+        <input type="email" id="cliente-email" autocomplete="email" required>
+        <button type="submit">Salvar dados</button>
+    </form>
+
+    <form id="form-senha" class="card-form">
+        <h3>Alterar senha</h3>
+        <label for="senha-atual">Senha atual</label>
+        <input type="password" id="senha-atual" autocomplete="current-password" required>
+        <label for="senha-nova">Nova senha</label>
+        <input type="password" id="senha-nova" autocomplete="new-password" minlength="6" required>
+        <button type="submit">Alterar senha</button>
+    </form>
 </div>
 
-<div id="treino" class="tab" style="display:none;">
+<div id="treino" class="tab" role="tabpanel" style="display:none;">
     <h2>Treino do Mês</h2>
-    <!-- Conteúdo do Treino do Mês -->
-    <p>Aqui você pode incluir o conteúdo do Treino do Mês.</p>
+    <ul id="lista-treino" class="treino"></ul>
 </div>
 
 <div class="footer">
-    <p>rojeto de Laboratório de Engenharia de Software - 2024.</p>
+    <p>Projeto de Laboratório de Engenharia de Software - 2024.</p>
 </div>
 
-<script>
-    function openTab(tabName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tab");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        document.getElementById(tabName).style.display = "block";
-    }
-</script>
-
+<script src="../../scripts/ui.js"></script>
+<script src="../../scripts/client.js"></script>
 </body>
 </html>

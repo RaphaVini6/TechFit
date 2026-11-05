@@ -3,30 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEJA BEM VINDO!</title>
+    <title>Login - TechFit</title>
+    <link rel="stylesheet" href="../../base.css">
     <link rel="stylesheet" href="../../pages/login/login.css">
 </head>
 <body>
 <div class="wrapper">
     <div class="form-wrapper">
         <form id="login-form">
+            <a href="../../index.html"><img class="logo-form" src="../../assets/logo0.png" alt="TechFit"></a>
             <h1>Login</h1>
+            <p id="msg" class="msg" role="alert" hidden></p>
             <div class="input-group">
-                <input type="text" id="email" required>
+                <input type="email" id="email" autocomplete="email" required>
                 <label for="email">Email</label>
             </div>
             <div class="input-group">
-                <input type="password" id="senha" required>
+                <input type="password" id="senha" autocomplete="current-password" required>
                 <label for="senha">Senha</label>
             </div>
             <div class="esquecer">
-                <a href="#">Esqueceu a senha? Clique aqui</a>
+                <a href="../esqueci-senha/esqueci-senha.html">Esqueceu a senha? Clique aqui</a>
             </div>
             <button type="submit">Entrar</button>
             <p class="login-link">Ainda não possui uma conta? <a href="../cadastro/cadastro.html">Cadastre-se</a></p>
         </form>
     </div>
 </div>
+<script src="../../scripts/ui.js"></script>
 <script src="../../scripts/login.js"></script>
 </body>
 </html>

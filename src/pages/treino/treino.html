@@ -3,53 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título da Página</title>
-    <link rel="stylesheet" href="treino.css"> <!-- Link para o arquivo CSS externo -->
+    <title>Treino do Mês - TechFit</title>
+    <link rel="stylesheet" href="../../base.css">
+    <link rel="stylesheet" href="treino.css">
 </head>
 <body>
 
 <div class="training-table">
     <div class="background-rectangle"></div>
-
-    <div class="day-column">
-        <div class="training-day">
-            <span class="day-label">Segunda-Feira</span><br><br>
-            <span class="training-label">Peito e Tríceps</span>
-        </div>
-    </div>
-
-    <div class="day-column">
-        <div class="training-day">
-            <span class="day-label">Terça-Feira</span><br><br>
-            <span class="training-label">Quadríceps e Panturrilha</span>
-        </div>
-    </div>
-
-    <div class="day-column">
-        <div class="training-day">
-            <span class="day-label">Quarta-Feira</span><br><br>
-            <span class="training-label">Costas e Bíceps</span>
-        </div>
-    </div>
-
-    <div class="day-column">
-        <div class="training-day">
-            <span class="day-label">Quinta-Feira</span><br><br>
-            <span class="training-label">Posterior de Coxa e Glúteo</span>
-        </div>
-    </div>
-
-    <div class="day-column">
-        <div class="training-day">
-            <span class="day-label">Sexta-Feira</span><br><br>
-            <span class="training-label">Ombro e Antebraço</span>
-        </div>
-    </div>
-
     <div class="training-table-title">Tabela de Treino</div>
-
+    <div id="dias" style="display:contents"></div>
     <div class="bottom-rectangle"></div>
 </div>
 
+<script>
+(async () => {
+  const token = localStorage.getItem('token');
+  if (!token) { window.location.href = '../login/login.html'; return; }
+  const alvo = document.getElementById('dias');
+  try {
+    const r = await fetch('/treino', { headers: { Authorization: 'Bearer ' + token } });
+    if (r.status === 401) { localStorage.removeItem('token'); window.location.href = '../login/login.html?expirou=1'; return; }
+    const treinos = await r.json();
+    treinos.forEach((t) => {
+      const coluna = document.createElement('div');
+      coluna.className = 'day-column';
+      const dia = document.createElement('div');
+      dia.className = 'training-day';
+      const label = document.createElement('span');
+      label.className = 'day-label';
+      label.textContent = t.dia;
+      const grupo = document.createElement('span');
+      grupo.className = 'training-label';
+      grupo.textContent = t.grupo;
+      dia.append(label, document.createElement('br'), document.createElement('br'), grupo);
+      coluna.appendChild(dia);
+      alvo.appendChild(coluna);
+    });
+  } catch (erro) {
+    alvo.textContent = 'Não foi possível carregar o treino.';
+  }
+})();
+</script>
 </body>
 </html>

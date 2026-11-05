@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova senha - TechFit</title>
+    <link rel="stylesheet" href="../../base.css">
+    <link rel="stylesheet" href="../login/login.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="form-wrapper">
+        <form id="redefinir-form">
+            <a href="../../index.html"><img class="logo-form" src="../../assets/logo0.png" alt="TechFit"></a>
+            <h1>Nova senha</h1>
+            <p id="msg" class="msg" role="alert" hidden></p>
+            <div class="input-group">
+                <input type="password" id="senha" autocomplete="new-password" minlength="6" required>
+                <label for="senha">Nova senha</label>
+            </div>
+            <button type="submit">Salvar</button>
+            <p class="login-link"><a href="../login/login.html">Voltar ao login</a></p>
+        </form>
+    </div>
+</div>
+<script src="../../scripts/ui.js"></script>
+<script>
+const token = new URLSearchParams(window.location.search).get('token');
+if (!token) showMessage('Link inválido. Peça um novo na página de recuperação.');
+
+document.getElementById('redefinir-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  try {
+    const r = await fetch('/redefinir-senha', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ token, senha: document.getElementById('senha').value })
+    });
+    const dados = await r.json();
+    if (r.ok) {
+      showMessage(dados.message + ' Redirecionando para o login...', 'success');
+      setTimeout(() => { window.location.href = '../login/login.html'; }, 1500);
+    } else {
+      showMessage(dados.error);
+    }
+  } catch (erro) {
+    showMessage('Não foi possível conectar ao servidor.');
+  }
+});
+</script>
+</body>
+</html>

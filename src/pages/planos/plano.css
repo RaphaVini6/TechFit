@@ -1,74 +1,110 @@
-/* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-}
-
+/* Página de planos (mesmo visual da landing page) */
 .section__container {
-    padding: 50px 0;
-    text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  text-align: center;
 }
 
 .section__header {
-    color: #ffffff;
+  margin-bottom: 0.8rem;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.section__header::before {
+  content: '// planos';
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--neon);
 }
 
 .section__subheader {
-    color: #ffffff;
-    max-width: 600px;
-    margin: 0 auto 30px auto;
+  max-width: 620px;
+  margin: 0 auto;
+  color: var(--text-light);
 }
 
 .price__grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  text-align: left;
 }
 
 .price__card {
-    background-color: #333333;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-    max-width: 300px;
-    width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.6rem;
+  background: var(--surface-strong);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition:
+    border-color 0.25s,
+    box-shadow 0.25s,
+    transform 0.25s;
+}
+
+.price__card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--neon), var(--cyan), transparent);
+}
+
+.price__card:hover {
+  transform: translateY(-4px);
+  border-color: var(--neon);
+  box-shadow: var(--glow);
 }
 
 .price__card__content {
-    margin-bottom: 20px;
+  flex: 1;
+  margin-bottom: 1.5rem;
 }
 
 .price__card h4 {
-    color: #ffffff;
+  margin-bottom: 0.6rem;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--neon);
 }
 
 .price__card h3 {
-    color: #ffa500;
-    font-size: 28px;
-    margin-bottom: 10px;
+  margin-bottom: 1.2rem;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  border-bottom: 1px solid var(--line);
 }
 
 .price__card p {
-    color: #ffffff;
-    margin-bottom: 10px;
+  margin: 0 0 0.6rem;
+  color: var(--text-light);
+}
+
+.price__card a {
+  display: block;
 }
 
 .price__btn {
-    background-color: #008000;
-    border: none;
-    border-radius: 4px;
-    color: #ffffff;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
+  width: 100%;
+  color: var(--neon);
+  background: transparent;
+  border: 1px solid var(--neon);
+  box-shadow: none;
 }
 
-.price__btn:hover {
-    background-color: #006400;
+.price__btn:hover:not(:disabled) {
+  color: #04120a;
+  background: linear-gradient(135deg, var(--neon), var(--cyan));
 }

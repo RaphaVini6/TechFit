@@ -1,11 +1,11 @@
-document.getElementById('cadastro-form').addEventListener('submit', async function(event) {
+document.getElementById('cadastro-form').addEventListener('submit', async function (event) {
   event.preventDefault();
   const nome = document.getElementById('nome').value;
   const email = document.getElementById('email').value;
   const senha = document.getElementById('senha').value;
 
   try {
-    const response = await fetch('http://localhost:3000/register', {
+    const response = await fetch('/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -15,13 +15,15 @@ document.getElementById('cadastro-form').addEventListener('submit', async functi
 
     const result = await response.json();
     if (response.ok) {
-      alert(result.message);
-      window.location.href = '../client/client.html';
+      showMessage(result.message + ' Redirecionando para o login...', 'success');
+      setTimeout(() => {
+        window.location.href = '../login/login.html';
+      }, 1200);
     } else {
-      alert(result.error || 'Erro ao registrar usuário');
+      showMessage(result.error || 'Erro ao registrar usuário');
     }
   } catch (error) {
     console.error('Erro ao registrar usuário:', error);
-    alert('Erro ao registrar usuário');
+    showMessage('Não foi possível conectar ao servidor.');
   }
 });

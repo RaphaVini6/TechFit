@@ -1,0 +1,274 @@
+/* Tema tecnológico compartilhado por todas as páginas (a landing page usa as mesmas cores) */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #07090c;
+  --surface: rgba(255, 255, 255, 0.04);
+  --surface-strong: rgba(14, 18, 24, 0.85);
+  --line: rgba(114, 234, 154, 0.2);
+  --neon: #72ea9a;
+  --cyan: #38e1ff;
+  --violet: #6f13f8;
+  --amber: #f5a637;
+  --text: #ffffff;
+  --text-light: #d1d5db;
+  --muted: #8b95a3;
+  --error: #ff6b6b;
+  --success: #72ea9a;
+  --radius: 12px;
+  --glow: 0 0 24px rgba(114, 234, 154, 0.25);
+  --mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
+
+  /* nomes antigos, ainda usados em alguns lugares */
+  --primary-color: var(--bg);
+  --secondary-color: var(--neon);
+  --accent-color: var(--amber);
+  --white: var(--text);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Poppins', system-ui, sans-serif;
+  color: var(--text);
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(900px 500px at 85% -10%, rgba(114, 234, 154, 0.16), transparent 60%),
+    radial-gradient(700px 500px at -10% 110%, rgba(111, 19, 248, 0.2), transparent 60%),
+    linear-gradient(rgba(114, 234, 154, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(114, 234, 154, 0.045) 1px, transparent 1px);
+  background-size:
+    auto,
+    auto,
+    44px 44px,
+    44px 44px;
+  background-attachment: fixed;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--neon);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--cyan);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 0.6em;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 600;
+}
+
+/* etiqueta técnica acima dos títulos: "// TÍTULO" */
+.tag,
+h2.tag {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--neon);
+}
+
+:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+}
+
+/* ---------- Botões ---------- */
+button,
+.btn {
+  font: inherit;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 0.7rem 1.3rem;
+  color: #04120a;
+  background: linear-gradient(135deg, var(--neon), var(--cyan));
+  box-shadow: var(--glow);
+  transition:
+    transform 0.15s,
+    box-shadow 0.2s,
+    filter 0.2s;
+}
+
+button:hover:not(:disabled),
+.btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 0 34px rgba(56, 225, 255, 0.4);
+}
+
+button:disabled {
+  cursor: default;
+  color: var(--muted);
+  background: var(--surface);
+  border-color: var(--line);
+  box-shadow: none;
+}
+
+button.perigo,
+button.ghost {
+  color: var(--text);
+  background: transparent;
+  border-color: var(--line);
+  box-shadow: none;
+}
+
+button.perigo {
+  color: var(--error);
+  border-color: rgba(255, 107, 107, 0.5);
+}
+
+button.ghost:hover:not(:disabled) {
+  border-color: var(--neon);
+  box-shadow: var(--glow);
+}
+
+/* ---------- Formulários ---------- */
+label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin: 0.9rem 0 0.35rem;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  font: inherit;
+  color: var(--text);
+  padding: 0.65rem 0.8rem;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--neon);
+  box-shadow: 0 0 0 3px rgba(114, 234, 154, 0.18);
+}
+
+select option {
+  background: #0e1218;
+}
+
+/* ---------- Cartão "vidro" ---------- */
+.card-form,
+.glass {
+  position: relative;
+  background: var(--surface-strong);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.4rem;
+  backdrop-filter: blur(8px);
+}
+
+.card-form::before,
+.glass::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  border-radius: var(--radius) var(--radius) 0 0;
+  background: linear-gradient(90deg, var(--neon), var(--cyan), transparent);
+}
+
+/* ---------- Mensagens ---------- */
+.msg {
+  margin: 0 0 15px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.msg[hidden] {
+  display: none;
+}
+
+.msg.msg--error {
+  color: var(--error);
+  border: 1px solid var(--error);
+}
+
+.msg.msg--success {
+  color: var(--success);
+  border: 1px solid var(--success);
+}
+
+/* ---------- Barra superior e rodapé das páginas internas ---------- */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 14px clamp(16px, 4vw, 40px);
+  background: rgba(7, 9, 12, 0.8);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.topbar img {
+  height: 38px;
+  width: auto;
+}
+
+.rodape {
+  padding: 18px 16px;
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

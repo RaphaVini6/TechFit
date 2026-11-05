@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: techfit-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: techfit
+      POSTGRES_USER: techfit
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?defina POSTGRES_PASSWORD no .env}
+    ports:
+      - '127.0.0.1:5432:5432'
+    volumes:
+      - techfit-data:/var/lib/postgresql/data
+
+volumes:
+  techfit-data:
